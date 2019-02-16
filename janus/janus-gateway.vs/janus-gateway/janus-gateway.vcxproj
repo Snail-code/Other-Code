@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{35703C54-77BB-4D3F-BF5D-AE56E8F66FCC}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeIncludeSearchPath>$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.4.244\0000\include\c++\4.8.5;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.4.244\0000\include\c++\4.8.5\x86_64-redhat-linux;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.4.244\0000\include\c++\4.8.5\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.4.244\0009\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.4.244\0002\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.4.244\0000\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Debug.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)janus-gateway-Debug.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Debug;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeIncludeSearchPath>$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.4.244\0000\include\c++\4.8.5;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.4.244\0000\include\c++\4.8.5\x86_64-redhat-linux;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.4.244\0000\include\c++\4.8.5\backward;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.4.244\0009\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.4.244\0002\include;$(LOCALAPPDATA)\VisualGDB\RemoteSourceCache\192.168.4.244\0000\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes>$(ProjectDir)\gcc_Release.h;$(VISUALGDB_DIR)\gcc_compat.h;$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /build "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeBuildCommandLine>
+    <NMakeCleanCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /clean "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>"$(VISUALGDB_DIR)\VisualGDB.exe" /rebuild "$(ProjectPath)" "/solution:$(SolutionPath)" "/config:$(Configuration)" "/platform:$(Platform)"</NMakeReBuildCommandLine>
+    <NMakeOutput>$(ProjectDir)janus-gateway-Release.vgdbsettings</NMakeOutput>
+    <IncludePath />
+    <ReferencePath />
+    <LibraryPath />
+    <NMakePreprocessorDefinitions>__VisualGDB_CFG_Release;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\debug.mak" />
+    <None Include="..\..\Makefile" />
+    <None Include="..\..\release.mak" />
+    <None Include="janus-gateway-Debug.vgdbsettings" />
+    <None Include="janus-gateway-Release.vgdbsettings" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\apierror.c" />
+    <ClCompile Include="..\..\auth.c" />
+    <ClCompile Include="..\..\config.c" />
+    <ClCompile Include="..\..\dtls-bio.c" />
+    <ClCompile Include="..\..\dtls.c" />
+    <ClCompile Include="..\..\events.c" />
+    <ClCompile Include="..\..\ice.c" />
+    <ClCompile Include="..\..\ip-utils.c" />
+    <ClCompile Include="..\..\janus-gateway.cpp" />
+    <ClCompile Include="..\..\janus.c" />
+    <ClCompile Include="..\..\log.c" />
+    <ClCompile Include="..\..\plugins\janus_pullstream.c" />
+    <ClCompile Include="..\..\plugins\janus_pushstream.c" />
+    <ClCompile Include="..\..\record.c" />
+    <ClCompile Include="..\..\rtcp.c" />
+    <ClCompile Include="..\..\rtp.c" />
+    <ClCompile Include="..\..\rtp_rtmp\aac_decoder.c" />
+    <ClCompile Include="..\..\rtp_rtmp\aac_encode.c" />
+    <ClCompile Include="..\..\rtp_rtmp\flv_demuxer.c" />
+    <ClCompile Include="..\..\rtp_rtmp\flv_muxer_video_audio.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-h264-pack.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-h264-unpack.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-h265-pack.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-h265-unpack.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-mp4a-latm-pack.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-mp4a-latm-unpack.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-mp4v-es-pack.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-mp4v-es-unpack.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-mpeg1or2es-pack.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-mpeg1or2es-unpack.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-mpeg4-generic-pack.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-mpeg4-generic-unpack.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-pack.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-payload-helper.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-payload.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-ts-pack.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-ts-unpack.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-unpack.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-vp8-pack.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-vp8-unpack.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-vp9-pack.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-vp9-unpack.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtcp-app.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtcp-bye.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtcp-interval.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtcp-rr.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtcp-sdec.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtcp-sr.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtcp.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtp-member-list.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtp-member.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtp-packet.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtp-profile.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtp-queue.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtp-ssrc.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtp-time.c" />
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtp.c" />
+    <ClCompile Include="..\..\rtp_rtmp\opus_encoder.c" />
+    <ClCompile Include="..\..\rtp_rtmp\opus_to_pcm.c" />
+    <ClCompile Include="..\..\rtp_rtmp\rtmp_client_live_play.c" />
+    <ClCompile Include="..\..\rtp_rtmp\rtmp_publish.c" />
+    <ClCompile Include="..\..\rtp_rtmp\rtp_muxer.c" />
+    <ClCompile Include="..\..\rtp_rtmp\rtp_to_h264.c" />
+    <ClCompile Include="..\..\rtp_rtmp\rtp_to_opus.c" />
+    <ClCompile Include="..\..\rtp_rtmp\rtp_to_video.c" />
+    <ClCompile Include="..\..\sctp.c" />
+    <ClCompile Include="..\..\sdp-utils.c" />
+    <ClCompile Include="..\..\sdp.c" />
+    <ClCompile Include="..\..\text2pcap.c" />
+    <ClCompile Include="..\..\turnrest.c" />
+    <ClCompile Include="..\..\utils.c" />
+    <ClCompile Include="..\..\events\janus_mqttevh.c" />
+    <ClCompile Include="..\..\events\janus_rabbitmqevh.c" />
+    <ClCompile Include="..\..\events\janus_sampleevh.c" />
+    <ClCompile Include="..\..\plugins\janus_audiobridge.c" />
+    <ClCompile Include="..\..\plugins\janus_duktape.c" />
+    <ClCompile Include="..\..\plugins\janus_duktape_extra.c" />
+    <ClCompile Include="..\..\plugins\janus_echotest.c" />
+    <ClCompile Include="..\..\plugins\janus_lua.c" />
+    <ClCompile Include="..\..\plugins\janus_lua_extra.c" />
+    <ClCompile Include="..\..\plugins\janus_nosip.c" />
+    <ClCompile Include="..\..\plugins\janus_recordplay.c" />
+    <ClCompile Include="..\..\plugins\janus_sip.c" />
+    <ClCompile Include="..\..\plugins\janus_sipre.c" />
+    <ClCompile Include="..\..\plugins\janus_streaming.c" />
+    <ClCompile Include="..\..\plugins\janus_textroom.c" />
+    <ClCompile Include="..\..\plugins\janus_videocall.c" />
+    <ClCompile Include="..\..\plugins\janus_videoroom.c" />
+    <ClCompile Include="..\..\plugins\janus_voicemail.c" />
+    <ClCompile Include="..\..\plugins\plugin.c" />
+    <ClCompile Include="..\..\plugins\duktape-deps\duktape.c" />
+    <ClCompile Include="..\..\plugins\duktape-deps\duk_console.c" />
+    <ClCompile Include="..\..\plugins\duktape-deps\duk_module_duktape.c" />
+    <ClCompile Include="..\..\postprocessing\janus-pp-rec.c" />
+    <ClCompile Include="..\..\postprocessing\pp-g711.c" />
+    <ClCompile Include="..\..\postprocessing\pp-g722.c" />
+    <ClCompile Include="..\..\postprocessing\pp-h264.c" />
+    <ClCompile Include="..\..\postprocessing\pp-opus.c" />
+    <ClCompile Include="..\..\postprocessing\pp-srt.c" />
+    <ClCompile Include="..\..\postprocessing\pp-webm.c" />
+    <ClCompile Include="..\..\transports\janus_http.c" />
+    <ClCompile Include="..\..\transports\janus_mqtt.c" />
+    <ClCompile Include="..\..\transports\janus_nanomsg.c" />
+    <ClCompile Include="..\..\transports\janus_pfunix.c" />
+    <ClCompile Include="..\..\transports\janus_rabbitmq.c" />
+    <ClCompile Include="..\..\transports\janus_websockets.c" />
+    <ClCompile Include="..\..\transports\transport.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\apierror.h" />
+    <ClInclude Include="..\..\auth.h" />
+    <ClInclude Include="..\..\config.h" />
+    <ClInclude Include="..\..\debug.h" />
+    <ClInclude Include="..\..\dtls-bio.h" />
+    <ClInclude Include="..\..\dtls.h" />
+    <ClInclude Include="..\..\events.h" />
+    <ClInclude Include="..\..\ice.h" />
+    <ClInclude Include="..\..\ip-utils.h" />
+    <ClInclude Include="..\..\janus.h" />
+    <ClInclude Include="..\..\log.h" />
+    <ClInclude Include="..\..\mach_gettime.h" />
+    <ClInclude Include="..\..\mutex.h" />
+    <ClInclude Include="..\..\record.h" />
+    <ClInclude Include="..\..\refcount.h" />
+    <ClInclude Include="..\..\rtcp.h" />
+    <ClInclude Include="..\..\rtp.h" />
+    <ClInclude Include="..\..\rtpsrtp.h" />
+    <ClInclude Include="..\..\rtp_rtmp\librtp\include\rtcp-header.h" />
+    <ClInclude Include="..\..\rtp_rtmp\librtp\include\rtp-header.h" />
+    <ClInclude Include="..\..\rtp_rtmp\librtp\include\rtp-internal.h" />
+    <ClInclude Include="..\..\rtp_rtmp\librtp\include\rtp-member-list.h" />
+    <ClInclude Include="..\..\rtp_rtmp\librtp\include\rtp-member.h" />
+    <ClInclude Include="..\..\rtp_rtmp\librtp\include\rtp-packet.h" />
+    <ClInclude Include="..\..\rtp_rtmp\librtp\include\rtp-param.h" />
+    <ClInclude Include="..\..\rtp_rtmp\librtp\include\rtp-payload.h" />
+    <ClInclude Include="..\..\rtp_rtmp\librtp\include\rtp-profile.h" />
+    <ClInclude Include="..\..\rtp_rtmp\librtp\include\rtp-queue.h" />
+    <ClInclude Include="..\..\rtp_rtmp\librtp\include\rtp-util.h" />
+    <ClInclude Include="..\..\rtp_rtmp\librtp\include\rtp.h" />
+    <ClInclude Include="..\..\rtp_rtmp\librtp\payload\rtp-payload-helper.h" />
+    <ClInclude Include="..\..\rtp_rtmp\librtp\payload\rtp-payload-internal.h" />
+    <ClInclude Include="..\..\rtp_rtmp\rtp_to_h264.h" />
+    <ClInclude Include="..\..\sctp.h" />
+    <ClInclude Include="..\..\sdp-utils.h" />
+    <ClInclude Include="..\..\sdp.h" />
+    <ClInclude Include="..\..\text2pcap.h" />
+    <ClInclude Include="..\..\turnrest.h" />
+    <ClInclude Include="..\..\utils.h" />
+    <ClInclude Include="..\..\version.h" />
+    <ClInclude Include="..\..\events\eventhandler.h" />
+    <ClInclude Include="..\..\plugins\janus_duktape_data.h" />
+    <ClInclude Include="..\..\plugins\janus_duktape_extra.h" />
+    <ClInclude Include="..\..\plugins\janus_lua_data.h" />
+    <ClInclude Include="..\..\plugins\janus_lua_extra.h" />
+    <ClInclude Include="..\..\plugins\plugin.h" />
+    <ClInclude Include="..\..\plugins\duktape-deps\duktape.h" />
+    <ClInclude Include="..\..\plugins\duktape-deps\duk_config.h" />
+    <ClInclude Include="..\..\plugins\duktape-deps\duk_console.h" />
+    <ClInclude Include="..\..\plugins\duktape-deps\duk_module_duktape.h" />
+    <ClInclude Include="..\..\postprocessing\pp-g711.h" />
+    <ClInclude Include="..\..\postprocessing\pp-g722.h" />
+    <ClInclude Include="..\..\postprocessing\pp-h264.h" />
+    <ClInclude Include="..\..\postprocessing\pp-opus-silence.h" />
+    <ClInclude Include="..\..\postprocessing\pp-opus.h" />
+    <ClInclude Include="..\..\postprocessing\pp-rtp.h" />
+    <ClInclude Include="..\..\postprocessing\pp-srt.h" />
+    <ClInclude Include="..\..\postprocessing\pp-webm.h" />
+    <ClInclude Include="..\..\transports\transport.h" />
+  </ItemGroup>
+</Project>

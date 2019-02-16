@@ -1,0 +1,626 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source files">
+      <UniqueIdentifier>{a4373567-9f91-4a5c-832a-bd39bdbda668}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header files">
+      <UniqueIdentifier>{1795991e-ec10-4b25-a380-361e3dc9c864}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource files">
+      <UniqueIdentifier>{edf5cb22-ee00-4cf0-8edb-b57c48307d66}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source files\events">
+      <UniqueIdentifier>{86abe19e-ddd8-425a-8ea2-cea38cd6c0e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\events">
+      <UniqueIdentifier>{9c78a4fe-2961-48f8-94d4-e5f6fc282a21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\plugins">
+      <UniqueIdentifier>{aa449d6f-3bf5-4e51-aff9-75daf6c32b8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\plugins">
+      <UniqueIdentifier>{a3a26b92-30b7-4da0-b75d-26377c550af1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\plugins\duktape-deps">
+      <UniqueIdentifier>{a35b69c2-ba9e-499e-bb9c-65d0c416bcbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\plugins\duktape-deps">
+      <UniqueIdentifier>{455ad2c1-4f8e-4cd6-a105-ff5bd98cd0a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\postprocessing">
+      <UniqueIdentifier>{e992bca8-7b7a-4f7f-8a5d-22dab571c40e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\postprocessing">
+      <UniqueIdentifier>{3a378028-1a0a-453c-8e3a-66bb1664a3f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\transports">
+      <UniqueIdentifier>{c47811d0-1a09-4748-97ef-342f1622473b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\transports">
+      <UniqueIdentifier>{894cdff0-3ded-4a4c-8aae-51f48415477e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisualGDB settings">
+      <UniqueIdentifier>{b4c4f7f1-43f0-4d4c-afe5-3175b6ec7b04}</UniqueIdentifier>
+      <Extensions>*.vgdbsettings</Extensions>
+    </Filter>
+    <Filter Include="Make files">
+      <UniqueIdentifier>{1435b000-a122-4303-b0ba-18b9f86d4f64}</UniqueIdentifier>
+      <Extensions>*.mak</Extensions>
+    </Filter>
+    <Filter Include="Source files\rtp_rtmp">
+      <UniqueIdentifier>{c5e0c658-797f-491d-8979-b46aeb6756ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\rtp_rtmp">
+      <UniqueIdentifier>{f26be9dd-222d-4600-9bd3-606c39a703d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\rtp_rtmp\librtp">
+      <UniqueIdentifier>{97e8211b-82ee-4b14-abe7-b5e33cbc60a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\rtp_rtmp\librtp">
+      <UniqueIdentifier>{6928ae25-39d6-4f52-bc52-6b1b81416b04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\rtp_rtmp\librtp\include">
+      <UniqueIdentifier>{99054a46-528c-4247-98e1-a2f2e4c141f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\rtp_rtmp\librtp\include">
+      <UniqueIdentifier>{a6a86274-4029-4e45-b24c-f3ce776302d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\rtp_rtmp\librtp\payload">
+      <UniqueIdentifier>{2e89d8c3-5ac5-4d6c-92a2-0e060c0490ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\rtp_rtmp\librtp\payload">
+      <UniqueIdentifier>{1b9f8055-b5fb-408e-9797-089a538a83c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\rtp_rtmp\librtp\source">
+      <UniqueIdentifier>{567f7f24-70d4-4076-b6f6-4e5879006a7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\rtp_rtmp\librtp\source">
+      <UniqueIdentifier>{1d3e6ec1-3dc3-4955-ad96-53f49f591e82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\rtp_rtmp\src">
+      <UniqueIdentifier>{28b37bed-9501-4d83-9b9e-7cb756bd5572}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\rtp_rtmp\libflv">
+      <UniqueIdentifier>{433cf3b2-662e-4fe4-849c-9923e4bc7c89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\rtp_rtmp\fdk-aac">
+      <UniqueIdentifier>{5a85df95-6c8c-4e5b-9a6c-992661b88461}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\rtp_rtmp\fdk-aac">
+      <UniqueIdentifier>{f3925a26-673a-4c62-b465-dc99117f7c06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\rtp_rtmp\fdk-aac\include">
+      <UniqueIdentifier>{aecd3170-f895-4abe-8004-ff9ef7d4a3f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\rtp_rtmp\fdk-aac\include">
+      <UniqueIdentifier>{570b916b-d8fd-426d-a671-dbb23c42856e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source files\rtp_rtmp\fdk-aac\include\fdk-aac">
+      <UniqueIdentifier>{6b18a51e-7c36-4d6a-815a-1bf4d09c8b06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header files\rtp_rtmp\fdk-aac\include\fdk-aac">
+      <UniqueIdentifier>{4955c3d6-bb94-421e-ac39-b23ea7b3a8fc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\events\janus_mqttevh.c">
+      <Filter>Source files\events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\events\janus_rabbitmqevh.c">
+      <Filter>Source files\events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\events\janus_sampleevh.c">
+      <Filter>Source files\events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\plugins\janus_audiobridge.c">
+      <Filter>Source files\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\plugins\janus_duktape.c">
+      <Filter>Source files\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\plugins\janus_duktape_extra.c">
+      <Filter>Source files\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\plugins\janus_echotest.c">
+      <Filter>Source files\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\plugins\janus_lua.c">
+      <Filter>Source files\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\plugins\janus_lua_extra.c">
+      <Filter>Source files\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\plugins\janus_nosip.c">
+      <Filter>Source files\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\plugins\janus_recordplay.c">
+      <Filter>Source files\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\plugins\janus_sip.c">
+      <Filter>Source files\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\plugins\janus_sipre.c">
+      <Filter>Source files\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\plugins\janus_streaming.c">
+      <Filter>Source files\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\plugins\janus_textroom.c">
+      <Filter>Source files\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\plugins\janus_videocall.c">
+      <Filter>Source files\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\plugins\janus_videoroom.c">
+      <Filter>Source files\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\plugins\janus_voicemail.c">
+      <Filter>Source files\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\plugins\plugin.c">
+      <Filter>Source files\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\plugins\duktape-deps\duktape.c">
+      <Filter>Source files\plugins\duktape-deps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\plugins\duktape-deps\duk_console.c">
+      <Filter>Source files\plugins\duktape-deps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\plugins\duktape-deps\duk_module_duktape.c">
+      <Filter>Source files\plugins\duktape-deps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\postprocessing\janus-pp-rec.c">
+      <Filter>Source files\postprocessing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\postprocessing\pp-g711.c">
+      <Filter>Source files\postprocessing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\postprocessing\pp-g722.c">
+      <Filter>Source files\postprocessing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\postprocessing\pp-h264.c">
+      <Filter>Source files\postprocessing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\postprocessing\pp-opus.c">
+      <Filter>Source files\postprocessing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\postprocessing\pp-srt.c">
+      <Filter>Source files\postprocessing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\postprocessing\pp-webm.c">
+      <Filter>Source files\postprocessing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\transports\janus_http.c">
+      <Filter>Source files\transports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\transports\janus_mqtt.c">
+      <Filter>Source files\transports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\transports\janus_nanomsg.c">
+      <Filter>Source files\transports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\transports\janus_pfunix.c">
+      <Filter>Source files\transports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\transports\janus_rabbitmq.c">
+      <Filter>Source files\transports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\transports\janus_websockets.c">
+      <Filter>Source files\transports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\transports\transport.c">
+      <Filter>Source files\transports</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\apierror.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\auth.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\config.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dtls-bio.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dtls.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\events.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ice.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ip-utils.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\janus-gateway.cpp">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\janus.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\log.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\record.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtcp.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sctp.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdp-utils.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdp.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\text2pcap.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\turnrest.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\utils.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\plugins\janus_pushstream.c">
+      <Filter>Source files\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-h264-pack.c">
+      <Filter>Source files\rtp_rtmp\librtp\payload</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-h264-unpack.c">
+      <Filter>Source files\rtp_rtmp\librtp\payload</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-h265-pack.c">
+      <Filter>Source files\rtp_rtmp\librtp\payload</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-h265-unpack.c">
+      <Filter>Source files\rtp_rtmp\librtp\payload</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-mp4a-latm-pack.c">
+      <Filter>Source files\rtp_rtmp\librtp\payload</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-mp4a-latm-unpack.c">
+      <Filter>Source files\rtp_rtmp\librtp\payload</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-mp4v-es-pack.c">
+      <Filter>Source files\rtp_rtmp\librtp\payload</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-mp4v-es-unpack.c">
+      <Filter>Source files\rtp_rtmp\librtp\payload</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-mpeg1or2es-pack.c">
+      <Filter>Source files\rtp_rtmp\librtp\payload</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-mpeg1or2es-unpack.c">
+      <Filter>Source files\rtp_rtmp\librtp\payload</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-mpeg4-generic-pack.c">
+      <Filter>Source files\rtp_rtmp\librtp\payload</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-mpeg4-generic-unpack.c">
+      <Filter>Source files\rtp_rtmp\librtp\payload</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-pack.c">
+      <Filter>Source files\rtp_rtmp\librtp\payload</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-payload-helper.c">
+      <Filter>Source files\rtp_rtmp\librtp\payload</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-payload.c">
+      <Filter>Source files\rtp_rtmp\librtp\payload</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-ts-pack.c">
+      <Filter>Source files\rtp_rtmp\librtp\payload</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-ts-unpack.c">
+      <Filter>Source files\rtp_rtmp\librtp\payload</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-unpack.c">
+      <Filter>Source files\rtp_rtmp\librtp\payload</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-vp8-pack.c">
+      <Filter>Source files\rtp_rtmp\librtp\payload</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-vp8-unpack.c">
+      <Filter>Source files\rtp_rtmp\librtp\payload</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-vp9-pack.c">
+      <Filter>Source files\rtp_rtmp\librtp\payload</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\payload\rtp-vp9-unpack.c">
+      <Filter>Source files\rtp_rtmp\librtp\payload</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtcp-app.c">
+      <Filter>Source files\rtp_rtmp\librtp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtcp-bye.c">
+      <Filter>Source files\rtp_rtmp\librtp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtcp-interval.c">
+      <Filter>Source files\rtp_rtmp\librtp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtcp-rr.c">
+      <Filter>Source files\rtp_rtmp\librtp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtcp-sdec.c">
+      <Filter>Source files\rtp_rtmp\librtp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtcp-sr.c">
+      <Filter>Source files\rtp_rtmp\librtp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtcp.c">
+      <Filter>Source files\rtp_rtmp\librtp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtp-member-list.c">
+      <Filter>Source files\rtp_rtmp\librtp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtp-member.c">
+      <Filter>Source files\rtp_rtmp\librtp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtp-packet.c">
+      <Filter>Source files\rtp_rtmp\librtp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtp-profile.c">
+      <Filter>Source files\rtp_rtmp\librtp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtp-queue.c">
+      <Filter>Source files\rtp_rtmp\librtp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtp-ssrc.c">
+      <Filter>Source files\rtp_rtmp\librtp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtp-time.c">
+      <Filter>Source files\rtp_rtmp\librtp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\librtp\source\rtp.c">
+      <Filter>Source files\rtp_rtmp\librtp\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\rtp_to_h264.c">
+      <Filter>Source files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\plugins\janus_pullstream.c">
+      <Filter>Source files\plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\aac_decoder.c">
+      <Filter>Source files\rtp_rtmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\aac_encode.c">
+      <Filter>Source files\rtp_rtmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\flv_demuxer.c">
+      <Filter>Source files\rtp_rtmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\flv_muxer_video_audio.c">
+      <Filter>Source files\rtp_rtmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\opus_encoder.c">
+      <Filter>Source files\rtp_rtmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\opus_to_pcm.c">
+      <Filter>Source files\rtp_rtmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\rtmp_client_live_play.c">
+      <Filter>Source files\rtp_rtmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\rtmp_publish.c">
+      <Filter>Source files\rtp_rtmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\rtp_muxer.c">
+      <Filter>Source files\rtp_rtmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\rtp_to_opus.c">
+      <Filter>Source files\rtp_rtmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\rtp_rtmp\rtp_to_video.c">
+      <Filter>Source files\rtp_rtmp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\events\eventhandler.h">
+      <Filter>Header files\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\plugins\janus_duktape_data.h">
+      <Filter>Header files\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\plugins\janus_duktape_extra.h">
+      <Filter>Header files\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\plugins\janus_lua_data.h">
+      <Filter>Header files\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\plugins\janus_lua_extra.h">
+      <Filter>Header files\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\plugins\plugin.h">
+      <Filter>Header files\plugins</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\plugins\duktape-deps\duktape.h">
+      <Filter>Header files\plugins\duktape-deps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\plugins\duktape-deps\duk_config.h">
+      <Filter>Header files\plugins\duktape-deps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\plugins\duktape-deps\duk_console.h">
+      <Filter>Header files\plugins\duktape-deps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\plugins\duktape-deps\duk_module_duktape.h">
+      <Filter>Header files\plugins\duktape-deps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\postprocessing\pp-g711.h">
+      <Filter>Header files\postprocessing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\postprocessing\pp-g722.h">
+      <Filter>Header files\postprocessing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\postprocessing\pp-h264.h">
+      <Filter>Header files\postprocessing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\postprocessing\pp-opus-silence.h">
+      <Filter>Header files\postprocessing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\postprocessing\pp-opus.h">
+      <Filter>Header files\postprocessing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\postprocessing\pp-rtp.h">
+      <Filter>Header files\postprocessing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\postprocessing\pp-srt.h">
+      <Filter>Header files\postprocessing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\postprocessing\pp-webm.h">
+      <Filter>Header files\postprocessing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\transports\transport.h">
+      <Filter>Header files\transports</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\apierror.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\auth.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\config.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\debug.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dtls-bio.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dtls.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\events.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ice.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ip-utils.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\janus.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\log.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mach_gettime.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\mutex.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\record.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\refcount.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtcp.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtp.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtpsrtp.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sctp.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdp-utils.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdp.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\text2pcap.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\turnrest.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\utils.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\version.h">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtp_rtmp\rtp_to_h264.h">
+      <Filter>Header files\rtp_rtmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtp_rtmp\librtp\include\rtcp-header.h">
+      <Filter>Header files\rtp_rtmp\librtp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtp_rtmp\librtp\include\rtp-header.h">
+      <Filter>Header files\rtp_rtmp\librtp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtp_rtmp\librtp\include\rtp-internal.h">
+      <Filter>Header files\rtp_rtmp\librtp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtp_rtmp\librtp\include\rtp-member-list.h">
+      <Filter>Header files\rtp_rtmp\librtp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtp_rtmp\librtp\include\rtp-member.h">
+      <Filter>Header files\rtp_rtmp\librtp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtp_rtmp\librtp\include\rtp-packet.h">
+      <Filter>Header files\rtp_rtmp\librtp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtp_rtmp\librtp\include\rtp-param.h">
+      <Filter>Header files\rtp_rtmp\librtp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtp_rtmp\librtp\include\rtp-payload.h">
+      <Filter>Header files\rtp_rtmp\librtp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtp_rtmp\librtp\include\rtp-profile.h">
+      <Filter>Header files\rtp_rtmp\librtp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtp_rtmp\librtp\include\rtp-queue.h">
+      <Filter>Header files\rtp_rtmp\librtp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtp_rtmp\librtp\include\rtp-util.h">
+      <Filter>Header files\rtp_rtmp\librtp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtp_rtmp\librtp\include\rtp.h">
+      <Filter>Header files\rtp_rtmp\librtp\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtp_rtmp\librtp\payload\rtp-payload-helper.h">
+      <Filter>Header files\rtp_rtmp\librtp\payload</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\rtp_rtmp\librtp\payload\rtp-payload-internal.h">
+      <Filter>Header files\rtp_rtmp\librtp\payload</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="janus-gateway-Debug.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="janus-gateway-Release.vgdbsettings">
+      <Filter>VisualGDB settings</Filter>
+    </None>
+    <None Include="..\..\Makefile" />
+    <None Include="..\..\debug.mak">
+      <Filter>Make files</Filter>
+    </None>
+    <None Include="..\..\release.mak">
+      <Filter>Make files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
